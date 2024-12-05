@@ -20,6 +20,14 @@ import swervelib.math.Matter;
  */
 public final class Constants
 {
+  public static final int Intake = 13;
+  public static final int rotator1 = 11;
+  public static final int rotator2 = 12;
+  public static final int IntakeAmpLimit = 40;
+  public static final int RotatorAmpLimit = 40;
+  public static final int rotatorUpperLimit = 40;
+  public static final int rotatorLowerLimit = 0;
+  public static final int IndexerAmpLimit = 60;
 
   public static final double ROBOT_MASS = (148 - 20.3) * 0.453592; // 32lbs * kg per pound
   public static final Matter CHASSIS    = new Matter(new Translation3d(0, 0, Units.inchesToMeters(8)), ROBOT_MASS);
