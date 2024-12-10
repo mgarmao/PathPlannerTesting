@@ -114,10 +114,11 @@ public class Intake extends SubsystemBase {
         });
     }
 
-    public void stopExtendRetract(){
-
-        rotator1.set(0);  
-        
+    public Command stopExtendRetract(){
+        return runOnce(
+                ()->{
+                    rotator1.set(0.0);
+                });        
     }
     /** This method will be called once per scheduler run. */
     @Override

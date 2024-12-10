@@ -98,6 +98,7 @@ public class RobotContainer
 
     NamedCommands.registerCommand("extendIntake", intake.extend());
     NamedCommands.registerCommand("retractIntake", intake.retract());
+    NamedCommands.registerCommand("stopRetract", intake.stopExtendRetract());
 
     // Configure the trigger bindings
     configureBindings();
